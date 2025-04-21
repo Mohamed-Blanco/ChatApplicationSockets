@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="1100.0" prefHeight="728.0" styleClass="text" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="example.controller.Produit_controller">
+    <center>
+        <GridPane style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="238.0" minHeight="0.0" prefHeight="108.66666412353516" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="642.0" minHeight="10.0" prefHeight="619.3333358764648" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <GridPane>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                            <children>
+                                <AnchorPane fx:id="Connected" layoutX="268.0" layoutY="48.0" prefHeight="14.0" prefWidth="14.0" AnchorPane.rightAnchor="268.0" />
+                                <Text fx:id="main" layoutX="206.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Active" AnchorPane.rightAnchor="296.96875">
+                                    <font>
+                                        <Font name="Ebrima Bold" size="16.0" />
+                                    </font>
+                                </Text>
+                                <Line endX="-3.0" endY="15.0" layoutX="307.0" layoutY="57.0" startX="-3.0" startY="-22.0" stroke="#bfbdbd" styleClass="style.css" AnchorPane.rightAnchor="245.5" />
+                                <AnchorPane layoutX="312.0" layoutY="13.0" prefHeight="84.0" prefWidth="129.0" AnchorPane.rightAnchor="108.0">
+                                    <children>
+                                        <Text layoutX="26.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jhon Doe" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="40.61962890625">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Text>
+                                        <Text layoutX="20.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin App" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="34.029296875">
+                                            <font>
+                                                <Font name="Ebrima" size="15.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </AnchorPane>
+                                <ImageView fitHeight="65.0" fitWidth="65.0" layoutX="420.0" layoutY="23.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="23.0">
+                                    <image>
+                                        <Image url="@../images/icons/profil.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Text layoutX="46.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PRODUCTS :" AnchorPane.leftAnchor="46.0" AnchorPane.topAnchor="48.0">
+                                    <font>
+                                        <Font name="Tahoma" size="16.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </GridPane>
+                <AnchorPane prefHeight="631.0" prefWidth="1100.0" style="-fx-background-color: #f9f9f9;" styleClass="drop-shadow" stylesheets="@style.css" GridPane.rowIndex="1">
+                    <children>
+                        <GridPane layoutX="1.0" layoutY="-1.0" prefHeight="69.0" prefWidth="1099.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="911.3333129882812" minWidth="10.0" prefWidth="911.3333129882812" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="542.3333129882812" minWidth="10.0" prefWidth="187.66668701171875" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Button fx:id="fiche" mnemonicParsing="false" onAction="#fichproduct" prefHeight="35.0" prefWidth="127.0" style="-fx-background-color: red;" styleClass="drop-shadow" stylesheets="@style.css" text="Fich Produit" textFill="WHITE" GridPane.halignment="RIGHT">
+                                    <font>
+                                        <Font name="Tahoma" size="13.0" />
+                                    </font>
+                                    <graphic>
+                                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" translateX="-5.0">
+                                            <image>
+                                                <Image url="@../images/icons/now-in-stock.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                    <GridPane.margin>
+                                        <Insets right="20.0" top="20.0" />
+                                    </GridPane.margin>
+                                </Button>
+                                <Button mnemonicParsing="false" onAction="#addproduct" prefHeight="34.0" prefWidth="127.0" style="-fx-background-color: #46c35f;" styleClass="drop-shadow" stylesheets="@style.css" text="Ajouter" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+                                    <font>
+                                        <Font name="Tahoma" size="13.0" />
+                                    </font>
+                                    <GridPane.margin>
+                                        <Insets right="60.0" top="20.0" />
+                                    </GridPane.margin>
+                                    <graphic>
+                                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@../images/icons/plus-symbole-noir.png" />
+                                            </image>
+                                        </ImageView>
+                                    </graphic>
+                                </Button>
+                            </children>
+                        </GridPane>
+                  <GridPane layoutX="31.0" layoutY="82.0" maxHeight="35.0" maxWidth="225.0" prefHeight="40.0" style="-fx-background-color: white; -fx-background-radius: 30;" styleClass="drop-shadow" stylesheets="@style.css" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="82.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="103.0" minWidth="10.0" prefWidth="48.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.0" minWidth="10.0" prefWidth="168.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <children>
+                        <TextField fx:id="searchTextField" maxWidth="160.0" onKeyTyped="#setupsearchtextfield" prefHeight="30.0" prefWidth="195.0" promptText="Search" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+                           <GridPane.margin>
+                              <Insets right="10.0" />
+                           </GridPane.margin>
+                        </TextField>
+                        <ImageView fitHeight="25.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+                           <image>
+                              <Image url="@../images/icons/9035096_search_icon.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </GridPane>
+                  <GridPane layoutX="639.0" layoutY="323.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="160.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ScrollPane prefHeight="200.0" prefWidth="200.0">
+                           <content>
+                              <TableView fx:id="table" prefHeight="769.0" prefWidth="1060.0" styleClass="drop-shadow">
+                                 <columns>
+                                     <TableColumn prefWidth="96.00002670288086" text="Id" />
+                                     <TableColumn prefWidth="96.00002670288086" text="Nom" />
+                                     <TableColumn prefWidth="98.39999389648438" text="Prix" />
+                                     <TableColumn prefWidth="98.39999389648438" text="Quantite" />
+                                     <TableColumn prefWidth="157.60000610351562" text="Dte d'expiration" />
+                                     <TableColumn prefWidth="150.4000244140625" text="codeBr" />
+                                     <TableColumn prefWidth="109.5999755859375" text="Catégorie" />
+                                     <TableColumn prefWidth="56.0" text="Action" />
+
+                                 </columns>
+                                 <stylesheets>
+                                    <URL value="@../styles/MainFormDesign.css" />
+                                    <URL value="@style.css" />
+                                 </stylesheets>
+                              </TableView>
+                           </content>
+                        </ScrollPane>
+                     </children>
+                  </GridPane>
+                    </children></AnchorPane>
+            </children>
+        </GridPane>
+    </center>
+</BorderPane>

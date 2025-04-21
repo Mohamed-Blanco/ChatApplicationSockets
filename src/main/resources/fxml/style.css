@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'oblong';
+    src: url('/fonts/oblong.ttf');
+}
+
+#main{
+    -fx-font-family: "oblong";
+}
+.root{
+    -fx-font-family: "oblong";
+}
+.drop-shadow {
+    -fx-effect: dropshadow(gaussian,  rgba(0, 0, 0, 0.1), 5, 0.7, 0, 0);
+}
+
+.borderraduis{
+    -fx-background-radius: 15px;
+}

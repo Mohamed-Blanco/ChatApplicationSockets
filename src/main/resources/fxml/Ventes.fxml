@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="1100.0" prefHeight="728.0" styleClass="text" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="example.controller.VentesController">
+    <center>
+        <GridPane style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="238.0" minHeight="0.0" prefHeight="108.66666412353516" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="642.0" minHeight="10.0" prefHeight="619.3333358764648" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <GridPane>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+                            <children>
+                                <AnchorPane fx:id="Connected" layoutX="268.0" layoutY="48.0" prefHeight="14.0" prefWidth="14.0" AnchorPane.rightAnchor="268.0" />
+                                <Text fx:id="main" layoutX="206.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text" text="Active" AnchorPane.rightAnchor="296.96875">
+                                    <font>
+                                        <Font name="Ebrima Bold" size="16.0" />
+                                    </font>
+                                </Text>
+                                <Line endX="-3.0" endY="15.0" layoutX="307.0" layoutY="57.0" startX="-3.0" startY="-22.0" stroke="#bfbdbd" styleClass="style.css" AnchorPane.rightAnchor="245.5" />
+                                <AnchorPane layoutX="312.0" layoutY="13.0" prefHeight="84.0" prefWidth="129.0" AnchorPane.rightAnchor="108.0">
+                                    <children>
+                                        <Text layoutX="26.0" layoutY="37.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jhon Doe" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="40.61962890625">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Text>
+                                        <Text layoutX="20.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin App" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="34.029296875">
+                                            <font>
+                                                <Font name="Ebrima" size="15.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </AnchorPane>
+                                <ImageView fitHeight="65.0" fitWidth="65.0" layoutX="420.0" layoutY="23.0" AnchorPane.rightAnchor="65.0" AnchorPane.topAnchor="23.0">
+                                    <image>
+                                        <Image url="@../images/icons/profil.png" />
+                                    </image>
+                                </ImageView>
+                            </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                            <children>
+                                <Text layoutX="46.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VENTES :" AnchorPane.leftAnchor="46.0" AnchorPane.topAnchor="48.0">
+                                    <font>
+                                        <Font name="Tahoma" size="16.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                        </AnchorPane>
+                    </children>
+                </GridPane>
+                <AnchorPane prefHeight="631.0" prefWidth="1100.0" style="-fx-background-color: #f9f9f9;" styleClass="drop-shadow" stylesheets="@style.css" GridPane.rowIndex="1">
+                    <children>
+                        <GridPane layoutY="67.0" prefHeight="112.0" prefWidth="1099.0" styleClass="drop-shadow" stylesheets="@style.css">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <GridPane prefHeight="72.0" prefWidth="214.0" style="-fx-background-color: rgb(68,102,242); -fx-background-radius: 5;">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <GridPane.margin>
+                                        <Insets left="20.0" right="20.0" top="20.0" />
+                                    </GridPane.margin>
+                                    <children>
+                                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Total :" translateX="30.0" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                            <font>
+                                                <Font name="System Bold" size="17.0" />
+                                            </font>
+                                        </Text>
+                                        <Text fx:id="total" fill="WHITE" layoutX="10.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="23000 DH" translateX="30.0" GridPane.valignment="BOTTOM">
+                                            <font>
+                                                <Font name="System Bold" size="17.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                </GridPane>
+                                <GridPane layoutX="30.0" layoutY="30.0" prefHeight="72.0" prefWidth="214.0" style="-fx-background-color: #46c35f; -fx-background-radius: 5;" GridPane.columnIndex="1">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="This Month :" translateX="30.0" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                            <font>
+                                                <Font name="System Bold" size="17.0" />
+                                            </font>
+                                        </Text>
+                                        <Text fx:id="month" fill="WHITE" layoutX="10.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2000 DH" translateX="30.0" GridPane.valignment="BOTTOM">
+                                            <font>
+                                                <Font name="System Bold" size="17.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                    <GridPane.margin>
+                                        <Insets left="20.0" right="20.0" top="20.0" />
+                                    </GridPane.margin>
+                                </GridPane>
+                                <GridPane layoutX="284.0" layoutY="30.0" prefHeight="72.0" prefWidth="214.0" style="-fx-background-color: rgb(56,164,248); -fx-background-radius: 5;" GridPane.columnIndex="2">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Last Month :" translateX="30.0" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                            <font>
+                                                <Font name="System Bold" size="17.0" />
+                                            </font>
+                                        </Text>
+                                        <Text fx:id="lmonth" fill="WHITE" layoutX="10.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="23880 DH" translateX="30.0" GridPane.valignment="BOTTOM">
+                                            <font>
+                                                <Font name="System Bold" size="17.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                    <GridPane.margin>
+                                        <Insets left="20.0" right="20.0" top="20.0" />
+                                    </GridPane.margin>
+                                </GridPane>
+                                <GridPane layoutX="538.0" layoutY="30.0" prefHeight="72.0" prefWidth="214.0" style="-fx-background-color: rgb(252,44,16); -fx-background-radius: 5;" GridPane.columnIndex="3">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="This Year :" translateX="30.0" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                            <font>
+                                                <Font name="System Bold" size="17.0" />
+                                            </font>
+                                        </Text>
+                                        <Text fx:id="year" fill="WHITE" layoutX="10.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="29800 DH" translateX="30.0" GridPane.valignment="BOTTOM">
+                                            <font>
+                                                <Font name="System Bold" size="17.0" />
+                                            </font>
+                                        </Text>
+                                    </children>
+                                    <GridPane.margin>
+                                        <Insets right="40.0" top="20.0" />
+                                    </GridPane.margin>
+                                </GridPane>
+                            </children>
+                        </GridPane>
+                        <GridPane layoutY="198.0" prefHeight="39.0" prefWidth="1100.0" styleClass="drop-shadow" stylesheets="@style.css">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="341.6666564941406" minWidth="10.0" prefWidth="125.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="561.6666793823242" minWidth="10.0" prefWidth="91.0" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="729.6666870117188" minWidth="10.0" prefWidth="63.333343505859375" />
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="792.6666564941406" minWidth="10.0" prefWidth="792.6666564941406" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                                <Button mnemonicParsing="false" onAction="#jour" style="-fx-background-color: rgb(255,255,255); -fx-border-radius: 20px; -fx-background-radius: 20px; -fx-text-fill: rgb(201,182,165); -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0);" text="Jour" GridPane.halignment="RIGHT">
+                                    <font>
+                                        <Font name="Tahoma" size="14.0" />
+                                    </font>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                    <GridPane.margin>
+                                        <Insets right="10.0" />
+                                    </GridPane.margin>
+                                </Button>
+                                <Button mnemonicParsing="false" onAction="#week" prefHeight="28.0" prefWidth="76.0" style="-fx-background-color: rgb(255,255,255); -fx-border-radius: 20px; -fx-background-radius: 20px; -fx-text-fill: rgb(201,182,165); -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0);" text="Semaine" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                                    <font>
+                                        <Font name="Tahoma" size="14.0" />
+                                    </font>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Button>
+                                <Button mnemonicParsing="false" onAction="#month" style="-fx-background-color: rgb(255,255,255); -fx-border-radius: 20px; -fx-background-radius: 20px; -fx-text-fill: rgb(201,182,165); -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.5), 10, 0, 0, 0);" text="Mois" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+                                    <font>
+                                        <Font name="Tahoma" size="14.0" />
+                                    </font>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Button>
+                                <GridPane maxHeight="35.0" maxWidth="225.0" prefHeight="40.0" style="-fx-background-color: white; -fx-background-radius: 30;" GridPane.columnIndex="3" GridPane.halignment="RIGHT">
+                                    <columnConstraints>
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="103.0" minWidth="10.0" prefWidth="48.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.0" minWidth="10.0" prefWidth="168.0" />
+                                    </columnConstraints>
+                                    <rowConstraints>
+                                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    </rowConstraints>
+                                    <children>
+                                        <TextField fx:id="searchprinc" maxWidth="160.0" onKeyTyped="#setupsearchtextfield" prefHeight="30.0" prefWidth="195.0" promptText="Search" style="-fx-background-color: white;" GridPane.columnIndex="1" GridPane.halignment="RIGHT">
+                                            <GridPane.margin>
+                                                <Insets right="10.0" />
+                                            </GridPane.margin>
+                                        </TextField>
+                                        <ImageView fitHeight="25.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER">
+                                            <image>
+                                                <Image url="@../images/icons/9035096_search_icon.png" />
+                                            </image>
+                                        </ImageView>
+                                    </children>
+                                    <GridPane.margin>
+                                        <Insets right="40.0" />
+                                    </GridPane.margin>
+                                </GridPane>
+                            </children>
+                        </GridPane>
+                        <GridPane layoutX="-1.0" layoutY="-1.0" prefHeight="87.0" prefWidth="1096.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            </rowConstraints>
+                            <children>
+                        <Button graphicTextGap="0.0" layoutX="939.0" layoutY="36.0" mnemonicParsing="false" onAction="#onadd" prefHeight="34.0" prefWidth="127.0" style="-fx-background-color: rgb(70,195,95); -fx-text-fill: white;" styleClass="drop-shadow" stylesheets="@style.css" text="Ajouter" GridPane.halignment="RIGHT">
+                           <font>
+                              <Font name="Tahoma" size="13.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <graphic>
+                              <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true" translateX="-10.0">
+                                 <image>
+                                    <Image url="@../images/icons/plus-symbole-noir.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <GridPane.margin>
+                              <Insets right="100.0" />
+                           </GridPane.margin>
+                        </Button>
+                            </children>
+                        </GridPane>
+                  <GridPane layoutX="157.0" layoutY="361.0" prefHeight="90.0" prefWidth="315.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="260.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <ScrollPane prefHeight="313.0" prefWidth="1040.0">
+                           <content>
+                              <TableView fx:id="listPurchases" maxHeight="600.0" prefHeight="299.0" prefWidth="1040.0" stylesheets="@../styles/MainFormDesign.css">
+                                 <columns>
+                                    <TableColumn fx:id="shid" prefWidth="144.80001525878924" text="ID" />
+                                    <TableColumn fx:id="shdate" minWidth="88.00003051757812" prefWidth="178.40000915527344" text="Date" />
+                                    <TableColumn fx:id="shprix" prefWidth="121.60003662109375" text="Total Prix " />
+                                    <TableColumn fx:id="shqua" minWidth="92.79998779296875" prefWidth="220.0" text="Quantite" />
+                                    <TableColumn fx:id="shmethod" prefWidth="200.0" text="MethPayementV" />
+                                    <TableColumn fx:id="action" minWidth="107.2000732421875" prefWidth="163.0" text="Action" />
+                                 </columns>
+                              </TableView>
+                           </content>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
+                        </ScrollPane>
+                     </children>
+                  </GridPane>
+                    </children></AnchorPane>
+            </children>
+        </GridPane>
+    </center>
+</BorderPane>
